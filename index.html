@@ -1,58 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link rel="stylesheet" href="style.css">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title></title>
-  </head>
-  <body>
-    <h1>Not Defteri Uygulaması 1</h1>
-    <div class="container p-3">
-        <h2 class="app-title" id="header">Not Defteri</h2>
-        <div class="card">
-            <div class="card-headder">
-                Yeni Not
-            </div>
-            <div class="card-body">
-                <form id="addNotForm">
-                    <div class="input-group mt-3">
-                    <input id="txtNotName" type="text" class="form-control"
-                    placeholder="Yeni Bir Not Yazınız..">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type=" submit"
-                           id="btnAddYeniNot">
-                            <i class="fas fa-plus"></i>
-                    </button>
-                    </div>
-                </div>
-                </form>
-            </div>
-        </div>
-        <div class="card mt-3">
-            <div class="card-header">
-                Not Listesi
-                <a id= "btnDeleteAll" href="#" class="btn btn-outline-danger btn-sm
-                delete-all float-right">
-                    Hepsini Sil</a>
-            </div>
-            <ul id="Not-list" class="list-group">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Not Defteri</title>
+</head>
 
-            </ul>
-        </div>
+<body>
 
-    </div>
+	<div class="container p-3">	
+		<h2 class="app-title" id="header">Todo List</h2>	
+		<div class="card">
+			<div class="card-header">
+				Yeni Not
+			</div>
+			<div class="card-body">
+				<form id="addTaskForm">
+					<div class="input-group mb-3">
+						<input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="Yeni Bir Not Giriniz.." aria-describedby="btnAddNewTask">
+						<div class="input-group-append">
+							<button class="btn btn-danger" type="submit" id="btnAddNewTask">
+								<i class="fas fa-plus"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="card mt-3">
+			<div class="card-header">
+				Not Listesi
+				    <a id="btnDeleteAll" href="#" class="btn btn-outline-primary btn-sm delete-all float-right">	
+						Hepsini Sil
+					</a>
+			</div>
 
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+			<ul id="task-list" class="list-group">
+		
+			</ul>
+
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
 </html>
